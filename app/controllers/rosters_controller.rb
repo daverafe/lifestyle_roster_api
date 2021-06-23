@@ -36,6 +36,7 @@ class RostersController < ApplicationController
   # DELETE /rosters/1
   def destroy
     @roster.destroy
+    render json: {message: "Roster Successfully Deleted"}
   end
 
   private
